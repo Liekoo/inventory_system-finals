@@ -5,14 +5,16 @@ C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory s
 C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\bin\Debug\Inventory system.xml
 C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\obj\Debug\WindowsApplication1.Form1.resources
 C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\obj\Debug\WindowsApplication1.Form2.resources
-C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\obj\Debug\WindowsApplication1.Form3.resources
 C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\obj\Debug\WindowsApplication1.Resources.resources
 C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\obj\Debug\Inventory system.vbproj.GenerateResource.Cache
 C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\obj\Debug\Inventory system.exe
 C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\obj\Debug\Inventory system.xml
 C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\obj\Debug\Inventory system.pdb
-C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\obj\Debug\WindowsApplication1.Form4.resources
-C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\obj\Debug\WindowsApplication1.Form5.resources
+C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\obj\Debug\WindowsApplication1.Fuser.resources
+C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\bin\Debug\MessagingToolkit.Barcode.dll
+C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\obj\Debug\WindowsApplication1.Fcustomer.resources
+C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\obj\Debug\WindowsApplication1.Finbound.resources
+C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\obj\Debug\WindowsApplication1.Fpstocks1.resources
+C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\obj\Debug\WindowsApplication1.Foutbound.resources
+C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\obj\Debug\WindowsApplication1.Form3.resources
 C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\obj\Debug\Inventory system.vbprojResolveAssemblyReference.cache
-C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\obj\Debug\WindowsApplication1.Form6.resources
-C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\obj\Debug\WindowsApplication1.Form7.resources

@@ -63,6 +63,17 @@ Namespace My
                 Return CType(Me("Database1ConnectionString"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\lyco\Documents\tarubnew.mdb"& _ 
+            "")>  _
+        Public ReadOnly Property tarubnewConnectionString() As String
+            Get
+                Return CType(Me("tarubnewConnectionString"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 

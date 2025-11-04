@@ -6,139 +6,151 @@ Inventorysystem
 </name>
 </assembly>
 <members>
-<member name="T:WindowsApplication1.Database1DataSet.tblitemsDataTable">
+<member name="T:WindowsApplication1.tarubnewDataSet.tbinboundingDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:WindowsApplication1.Database1DataSet.tblusersDataTable">
+</member><member name="T:WindowsApplication1.tarubnewDataSet.tblcustomersDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:WindowsApplication1.Database1DataSet.tblitemsRow">
+</member><member name="T:WindowsApplication1.tarubnewDataSet.tbloutboundingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WindowsApplication1.tarubnewDataSet.tblstocksDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WindowsApplication1.tarubnewDataSet.tblusersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WindowsApplication1.tarubnewDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WindowsApplication1.tarubnewDataSet.tblstocks1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WindowsApplication1.tarubnewDataSet.tbinboundingRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:WindowsApplication1.Database1DataSet.tblusersRow">
+</member><member name="T:WindowsApplication1.tarubnewDataSet.tblcustomersRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:WindowsApplication1.Database1DataSet.tblitemsRowChangeEvent">
+</member><member name="T:WindowsApplication1.tarubnewDataSet.tbloutboundingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WindowsApplication1.tarubnewDataSet.tblstocksRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WindowsApplication1.tarubnewDataSet.tblusersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WindowsApplication1.tarubnewDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WindowsApplication1.tarubnewDataSet.tblstocks1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WindowsApplication1.tarubnewDataSet.tbinboundingRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:WindowsApplication1.Database1DataSet.tblusersRowChangeEvent">
+</member><member name="T:WindowsApplication1.tarubnewDataSet.tblcustomersRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:WindowsApplication1.Database1DataSet">
+</member><member name="T:WindowsApplication1.tarubnewDataSet.tbloutboundingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WindowsApplication1.tarubnewDataSet.tblstocksRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WindowsApplication1.tarubnewDataSet.tblusersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WindowsApplication1.tarubnewDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WindowsApplication1.tarubnewDataSet.tblstocks1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WindowsApplication1.tarubnewDataSet">
 	<summary>
 Represents a strongly typed in-memory cache of data.
 </summary>
-</member><member name="T:WindowsApplication1.Database1DataSetTableAdapters.tblitemsTableAdapter">
+</member><member name="T:WindowsApplication1.tarubnewDataSetTableAdapters.tbinboundingTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
-</member><member name="T:WindowsApplication1.Database1DataSetTableAdapters.tblusersTableAdapter">
+</member><member name="T:WindowsApplication1.tarubnewDataSetTableAdapters.tblcustomersTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
-</member><member name="M:WindowsApplication1.Database1DataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(WindowsApplication1.Database1DataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+</member><member name="T:WindowsApplication1.tarubnewDataSetTableAdapters.tbloutboundingTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WindowsApplication1.tarubnewDataSetTableAdapters.tblstocksTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WindowsApplication1.tarubnewDataSetTableAdapters.tblusersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WindowsApplication1.tarubnewDataSetTableAdapters.DataTable1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WindowsApplication1.tarubnewDataSetTableAdapters.tblstocks1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:WindowsApplication1.tarubnewDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(WindowsApplication1.tarubnewDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
 	<summary>
 Update rows in top-down order.
 </summary>
-</member><member name="M:WindowsApplication1.Database1DataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(WindowsApplication1.Database1DataSet,System.Collections.Generic.List{System.Data.DataRow})">
+</member><member name="M:WindowsApplication1.tarubnewDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(WindowsApplication1.tarubnewDataSet,System.Collections.Generic.List{System.Data.DataRow})">
 	<summary>
 Insert rows in top-down order.
 </summary>
-</member><member name="M:WindowsApplication1.Database1DataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(WindowsApplication1.Database1DataSet,System.Collections.Generic.List{System.Data.DataRow})">
+</member><member name="M:WindowsApplication1.tarubnewDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(WindowsApplication1.tarubnewDataSet,System.Collections.Generic.List{System.Data.DataRow})">
 	<summary>
 Delete rows in bottom-up order.
 </summary>
-</member><member name="M:WindowsApplication1.Database1DataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+</member><member name="M:WindowsApplication1.tarubnewDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
 	<summary>
 Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
 </summary>
-</member><member name="M:WindowsApplication1.Database1DataSetTableAdapters.TableAdapterManager.UpdateAll(WindowsApplication1.Database1DataSet)">
+</member><member name="M:WindowsApplication1.tarubnewDataSetTableAdapters.TableAdapterManager.UpdateAll(WindowsApplication1.tarubnewDataSet)">
 	<summary>
 Update all changes to the dataset.
 </summary>
-</member><member name="T:WindowsApplication1.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+</member><member name="T:WindowsApplication1.tarubnewDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
 	<summary>
 Update Order Option
 </summary>
-</member><member name="T:WindowsApplication1.Database1DataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+</member><member name="T:WindowsApplication1.tarubnewDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
 	<summary>
 Used to sort self-referenced table's rows
 </summary>
-</member><member name="T:WindowsApplication1.Database1DataSetTableAdapters.TableAdapterManager">
-	<summary>
-TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
-</summary>
-</member><member name="T:WindowsApplication1.Database1DataSet1.tblitemsDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:WindowsApplication1.Database1DataSet1.tblusersDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:WindowsApplication1.Database1DataSet1.tblitemsRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:WindowsApplication1.Database1DataSet1.tblusersRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:WindowsApplication1.Database1DataSet1.tblitemsRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:WindowsApplication1.Database1DataSet1.tblusersRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:WindowsApplication1.Database1DataSet1">
-	<summary>
-Represents a strongly typed in-memory cache of data.
-</summary>
-</member><member name="T:WindowsApplication1.Database1DataSet1TableAdapters.tblitemsTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:WindowsApplication1.Database1DataSet1TableAdapters.tblusersTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="M:WindowsApplication1.Database1DataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(WindowsApplication1.Database1DataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Update rows in top-down order.
-</summary>
-</member><member name="M:WindowsApplication1.Database1DataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(WindowsApplication1.Database1DataSet1,System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Insert rows in top-down order.
-</summary>
-</member><member name="M:WindowsApplication1.Database1DataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(WindowsApplication1.Database1DataSet1,System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Delete rows in bottom-up order.
-</summary>
-</member><member name="M:WindowsApplication1.Database1DataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
-</summary>
-</member><member name="M:WindowsApplication1.Database1DataSet1TableAdapters.TableAdapterManager.UpdateAll(WindowsApplication1.Database1DataSet1)">
-	<summary>
-Update all changes to the dataset.
-</summary>
-</member><member name="T:WindowsApplication1.Database1DataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
-	<summary>
-Update Order Option
-</summary>
-</member><member name="T:WindowsApplication1.Database1DataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
-	<summary>
-Used to sort self-referenced table's rows
-</summary>
-</member><member name="T:WindowsApplication1.Database1DataSet1TableAdapters.TableAdapterManager">
+</member><member name="T:WindowsApplication1.tarubnewDataSetTableAdapters.TableAdapterManager">
 	<summary>
 TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
 </summary>

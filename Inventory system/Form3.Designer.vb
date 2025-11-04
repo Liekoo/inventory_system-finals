@@ -23,320 +23,290 @@ Partial Class Form3
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim IdLabel As System.Windows.Forms.Label
-        Dim ItemnameLabel As System.Windows.Forms.Label
-        Dim CategoryLabel As System.Windows.Forms.Label
-        Dim Serial_noLabel As System.Windows.Forms.Label
-        Dim QtyLabel As System.Windows.Forms.Label
-        Dim Stock_inLabel As System.Windows.Forms.Label
-        Dim Stock_outLabel As System.Windows.Forms.Label
-        Dim Item_descriptionLabel As System.Windows.Forms.Label
-        Dim PriceLabel As System.Windows.Forms.Label
-        Dim Total_priceLabel As System.Windows.Forms.Label
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.TarubnewDataSet = New WindowsApplication1.tarubnewDataSet()
+        Me.TblstocksBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TblstocksTableAdapter = New WindowsApplication1.tarubnewDataSetTableAdapters.tblstocksTableAdapter()
+        Me.TableAdapterManager = New WindowsApplication1.tarubnewDataSetTableAdapters.TableAdapterManager()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.TblitemsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Database1DataSet = New WindowsApplication1.Database1DataSet()
-        Me.TblitemsTableAdapter = New WindowsApplication1.Database1DataSetTableAdapters.tblitemsTableAdapter()
-        Me.TableAdapterManager = New WindowsApplication1.Database1DataSetTableAdapters.TableAdapterManager()
-        Me.IdTextBox = New System.Windows.Forms.TextBox()
-        Me.ItemnameTextBox = New System.Windows.Forms.TextBox()
-        Me.CategoryTextBox = New System.Windows.Forms.TextBox()
-        Me.Serial_noTextBox = New System.Windows.Forms.TextBox()
-        Me.QtyTextBox = New System.Windows.Forms.TextBox()
-        Me.Stock_inDateTimePicker = New System.Windows.Forms.DateTimePicker()
-        Me.Stock_outDateTimePicker = New System.Windows.Forms.DateTimePicker()
-        Me.Item_descriptionTextBox = New System.Windows.Forms.TextBox()
-        Me.PriceTextBox = New System.Windows.Forms.TextBox()
-        Me.Total_priceTextBox = New System.Windows.Forms.TextBox()
-        IdLabel = New System.Windows.Forms.Label()
-        ItemnameLabel = New System.Windows.Forms.Label()
-        CategoryLabel = New System.Windows.Forms.Label()
-        Serial_noLabel = New System.Windows.Forms.Label()
-        QtyLabel = New System.Windows.Forms.Label()
-        Stock_inLabel = New System.Windows.Forms.Label()
-        Stock_outLabel = New System.Windows.Forms.Label()
-        Item_descriptionLabel = New System.Windows.Forms.Label()
-        PriceLabel = New System.Windows.Forms.Label()
-        Total_priceLabel = New System.Windows.Forms.Label()
-        CType(Me.TblitemsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Tblstocks1BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Tblstocks1TableAdapter = New WindowsApplication1.tarubnewDataSetTableAdapters.tblstocks1TableAdapter()
+        Me.Tblstocks1DataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TblcustomersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TblcustomersTableAdapter = New WindowsApplication1.tarubnewDataSetTableAdapters.tblcustomersTableAdapter()
+        Me.TblusersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TblusersTableAdapter = New WindowsApplication1.tarubnewDataSetTableAdapters.tblusersTableAdapter()
+        Me.TbinboundingBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TbinboundingTableAdapter = New WindowsApplication1.tarubnewDataSetTableAdapters.tbinboundingTableAdapter()
+        Me.Button1 = New System.Windows.Forms.Button()
+        CType(Me.TarubnewDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TblstocksBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Tblstocks1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Tblstocks1DataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TblcustomersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TblusersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbinboundingBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'IdLabel
+        'TarubnewDataSet
         '
-        IdLabel.AutoSize = True
-        IdLabel.Location = New System.Drawing.Point(126, 114)
-        IdLabel.Name = "IdLabel"
-        IdLabel.Size = New System.Drawing.Size(23, 17)
-        IdLabel.TabIndex = 14
-        IdLabel.Text = "id:"
+        Me.TarubnewDataSet.DataSetName = "tarubnewDataSet"
+        Me.TarubnewDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'ItemnameLabel
+        'TblstocksBindingSource
         '
-        ItemnameLabel.AutoSize = True
-        ItemnameLabel.Location = New System.Drawing.Point(126, 142)
-        ItemnameLabel.Name = "ItemnameLabel"
-        ItemnameLabel.Size = New System.Drawing.Size(73, 17)
-        ItemnameLabel.TabIndex = 16
-        ItemnameLabel.Text = "itemname:"
+        Me.TblstocksBindingSource.DataMember = "tblstocks"
+        Me.TblstocksBindingSource.DataSource = Me.TarubnewDataSet
         '
-        'CategoryLabel
+        'TblstocksTableAdapter
         '
-        CategoryLabel.AutoSize = True
-        CategoryLabel.Location = New System.Drawing.Point(126, 170)
-        CategoryLabel.Name = "CategoryLabel"
-        CategoryLabel.Size = New System.Drawing.Size(67, 17)
-        CategoryLabel.TabIndex = 18
-        CategoryLabel.Text = "category:"
+        Me.TblstocksTableAdapter.ClearBeforeFill = True
         '
-        'Serial_noLabel
+        'TableAdapterManager
         '
-        Serial_noLabel.AutoSize = True
-        Serial_noLabel.Location = New System.Drawing.Point(126, 198)
-        Serial_noLabel.Name = "Serial_noLabel"
-        Serial_noLabel.Size = New System.Drawing.Size(66, 17)
-        Serial_noLabel.TabIndex = 20
-        Serial_noLabel.Text = "serial no:"
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.tbinboundingTableAdapter = Nothing
+        Me.TableAdapterManager.tblcustomersTableAdapter = Nothing
+        Me.TableAdapterManager.tbloutboundingTableAdapter = Nothing
+        Me.TableAdapterManager.tblstocks1TableAdapter = Nothing
+        Me.TableAdapterManager.tblstocksTableAdapter = Me.TblstocksTableAdapter
+        Me.TableAdapterManager.tblusersTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = WindowsApplication1.tarubnewDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
-        'QtyLabel
+        'Label3
         '
-        QtyLabel.AutoSize = True
-        QtyLabel.Location = New System.Drawing.Point(126, 226)
-        QtyLabel.Name = "QtyLabel"
-        QtyLabel.Size = New System.Drawing.Size(31, 17)
-        QtyLabel.TabIndex = 22
-        QtyLabel.Text = "qty:"
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(12, 264)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(193, 38)
+        Me.Label3.TabIndex = 14
+        Me.Label3.Text = "Zero Stocks"
         '
-        'Stock_inLabel
+        'Label1
         '
-        Stock_inLabel.AutoSize = True
-        Stock_inLabel.Location = New System.Drawing.Point(126, 255)
-        Stock_inLabel.Name = "Stock_inLabel"
-        Stock_inLabel.Size = New System.Drawing.Size(60, 17)
-        Stock_inLabel.TabIndex = 24
-        Stock_inLabel.Text = "stock in:"
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(28, 28)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(257, 38)
+        Me.Label1.TabIndex = 15
+        Me.Label1.Text = "Total Customers"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Stock_outLabel
+        'Label2
         '
-        Stock_outLabel.AutoSize = True
-        Stock_outLabel.Location = New System.Drawing.Point(126, 283)
-        Stock_outLabel.Name = "Stock_outLabel"
-        Stock_outLabel.Size = New System.Drawing.Size(69, 17)
-        Stock_outLabel.TabIndex = 26
-        Stock_outLabel.Text = "stock out:"
-        '
-        'Item_descriptionLabel
-        '
-        Item_descriptionLabel.AutoSize = True
-        Item_descriptionLabel.Location = New System.Drawing.Point(126, 310)
-        Item_descriptionLabel.Name = "Item_descriptionLabel"
-        Item_descriptionLabel.Size = New System.Drawing.Size(111, 17)
-        Item_descriptionLabel.TabIndex = 28
-        Item_descriptionLabel.Text = "item description:"
-        '
-        'PriceLabel
-        '
-        PriceLabel.AutoSize = True
-        PriceLabel.Location = New System.Drawing.Point(126, 338)
-        PriceLabel.Name = "PriceLabel"
-        PriceLabel.Size = New System.Drawing.Size(43, 17)
-        PriceLabel.TabIndex = 30
-        PriceLabel.Text = "price:"
-        '
-        'Total_priceLabel
-        '
-        Total_priceLabel.AutoSize = True
-        Total_priceLabel.Location = New System.Drawing.Point(126, 366)
-        Total_priceLabel.Name = "Total_priceLabel"
-        Total_priceLabel.Size = New System.Drawing.Size(74, 17)
-        Total_priceLabel.TabIndex = 32
-        Total_priceLabel.Text = "total price:"
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(129, 446)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(120, 37)
-        Me.Button1.TabIndex = 9
-        Me.Button1.Text = "Save"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(323, 28)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(198, 38)
+        Me.Label2.TabIndex = 16
+        Me.Label2.Text = "Total Stocks"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(206, 29)
+        Me.Label4.Location = New System.Drawing.Point(584, 28)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(135, 38)
-        Me.Label4.TabIndex = 14
-        Me.Label4.Text = "Stock In"
+        Me.Label4.Size = New System.Drawing.Size(179, 38)
+        Me.Label4.TabIndex = 17
+        Me.Label4.Text = "Total users"
         '
-        'Button2
+        'Label5
         '
-        Me.Button2.Location = New System.Drawing.Point(323, 446)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(120, 37)
-        Me.Button2.TabIndex = 10
-        Me.Button2.Text = "Back"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(793, 28)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(214, 38)
+        Me.Label5.TabIndex = 18
+        Me.Label5.Text = "Total Inbound"
         '
-        'TblitemsBindingSource
+        'Label6
         '
-        Me.TblitemsBindingSource.DataMember = "tblitems"
-        Me.TblitemsBindingSource.DataSource = Me.Database1DataSet
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(39, 78)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(35, 38)
+        Me.Label6.TabIndex = 19
+        Me.Label6.Text = "0"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Database1DataSet
+        'Label7
         '
-        Me.Database1DataSet.DataSetName = "Database1DataSet"
-        Me.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(334, 78)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(35, 38)
+        Me.Label7.TabIndex = 20
+        Me.Label7.Text = "0"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'TblitemsTableAdapter
+        'Label8
         '
-        Me.TblitemsTableAdapter.ClearBeforeFill = True
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(600, 89)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(35, 38)
+        Me.Label8.TabIndex = 21
+        Me.Label8.Text = "0"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'TableAdapterManager
+        'Label9
         '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.tblitemsTableAdapter = Me.TblitemsTableAdapter
-        Me.TableAdapterManager.tblusersTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = WindowsApplication1.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(807, 89)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(35, 38)
+        Me.Label9.TabIndex = 22
+        Me.Label9.Text = "0"
+        Me.Label9.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'IdTextBox
+        'Tblstocks1BindingSource
         '
-        Me.IdTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TblitemsBindingSource, "id", True))
-        Me.IdTextBox.Location = New System.Drawing.Point(243, 111)
-        Me.IdTextBox.Name = "IdTextBox"
-        Me.IdTextBox.Size = New System.Drawing.Size(200, 22)
-        Me.IdTextBox.TabIndex = 15
+        Me.Tblstocks1BindingSource.DataMember = "tblstocks1"
+        Me.Tblstocks1BindingSource.DataSource = Me.TarubnewDataSet
         '
-        'ItemnameTextBox
+        'Tblstocks1TableAdapter
         '
-        Me.ItemnameTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TblitemsBindingSource, "itemname", True))
-        Me.ItemnameTextBox.Location = New System.Drawing.Point(243, 139)
-        Me.ItemnameTextBox.Name = "ItemnameTextBox"
-        Me.ItemnameTextBox.Size = New System.Drawing.Size(200, 22)
-        Me.ItemnameTextBox.TabIndex = 17
+        Me.Tblstocks1TableAdapter.ClearBeforeFill = True
         '
-        'CategoryTextBox
+        'Tblstocks1DataGridView
         '
-        Me.CategoryTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TblitemsBindingSource, "category", True))
-        Me.CategoryTextBox.Location = New System.Drawing.Point(243, 167)
-        Me.CategoryTextBox.Name = "CategoryTextBox"
-        Me.CategoryTextBox.Size = New System.Drawing.Size(200, 22)
-        Me.CategoryTextBox.TabIndex = 19
+        Me.Tblstocks1DataGridView.AutoGenerateColumns = False
+        Me.Tblstocks1DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.Tblstocks1DataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4})
+        Me.Tblstocks1DataGridView.DataSource = Me.Tblstocks1BindingSource
+        Me.Tblstocks1DataGridView.Location = New System.Drawing.Point(19, 313)
+        Me.Tblstocks1DataGridView.Name = "Tblstocks1DataGridView"
+        Me.Tblstocks1DataGridView.RowTemplate.Height = 24
+        Me.Tblstocks1DataGridView.Size = New System.Drawing.Size(544, 220)
+        Me.Tblstocks1DataGridView.TabIndex = 22
         '
-        'Serial_noTextBox
+        'DataGridViewTextBoxColumn2
         '
-        Me.Serial_noTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TblitemsBindingSource, "serial_no", True))
-        Me.Serial_noTextBox.Location = New System.Drawing.Point(243, 195)
-        Me.Serial_noTextBox.Name = "Serial_noTextBox"
-        Me.Serial_noTextBox.Size = New System.Drawing.Size(200, 22)
-        Me.Serial_noTextBox.TabIndex = 21
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "productcode"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "productcode"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         '
-        'QtyTextBox
+        'DataGridViewTextBoxColumn3
         '
-        Me.QtyTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TblitemsBindingSource, "qty", True))
-        Me.QtyTextBox.Location = New System.Drawing.Point(243, 223)
-        Me.QtyTextBox.Name = "QtyTextBox"
-        Me.QtyTextBox.Size = New System.Drawing.Size(200, 22)
-        Me.QtyTextBox.TabIndex = 23
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "productname"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "productname"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         '
-        'Stock_inDateTimePicker
+        'DataGridViewTextBoxColumn4
         '
-        Me.Stock_inDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.TblitemsBindingSource, "stock_in", True))
-        Me.Stock_inDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.Stock_inDateTimePicker.Location = New System.Drawing.Point(243, 251)
-        Me.Stock_inDateTimePicker.Name = "Stock_inDateTimePicker"
-        Me.Stock_inDateTimePicker.Size = New System.Drawing.Size(200, 22)
-        Me.Stock_inDateTimePicker.TabIndex = 25
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "stocks"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "stocks"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
         '
-        'Stock_outDateTimePicker
+        'TblcustomersBindingSource
         '
-        Me.Stock_outDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.TblitemsBindingSource, "stock_out", True))
-        Me.Stock_outDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.Stock_outDateTimePicker.Location = New System.Drawing.Point(243, 279)
-        Me.Stock_outDateTimePicker.Name = "Stock_outDateTimePicker"
-        Me.Stock_outDateTimePicker.Size = New System.Drawing.Size(200, 22)
-        Me.Stock_outDateTimePicker.TabIndex = 27
+        Me.TblcustomersBindingSource.DataMember = "tblcustomers"
+        Me.TblcustomersBindingSource.DataSource = Me.TarubnewDataSet
         '
-        'Item_descriptionTextBox
+        'TblcustomersTableAdapter
         '
-        Me.Item_descriptionTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TblitemsBindingSource, "item_description", True))
-        Me.Item_descriptionTextBox.Location = New System.Drawing.Point(243, 307)
-        Me.Item_descriptionTextBox.Name = "Item_descriptionTextBox"
-        Me.Item_descriptionTextBox.Size = New System.Drawing.Size(200, 22)
-        Me.Item_descriptionTextBox.TabIndex = 29
+        Me.TblcustomersTableAdapter.ClearBeforeFill = True
         '
-        'PriceTextBox
+        'TblusersBindingSource
         '
-        Me.PriceTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TblitemsBindingSource, "price", True))
-        Me.PriceTextBox.Location = New System.Drawing.Point(243, 335)
-        Me.PriceTextBox.Name = "PriceTextBox"
-        Me.PriceTextBox.Size = New System.Drawing.Size(200, 22)
-        Me.PriceTextBox.TabIndex = 31
+        Me.TblusersBindingSource.DataMember = "tblusers"
+        Me.TblusersBindingSource.DataSource = Me.TarubnewDataSet
         '
-        'Total_priceTextBox
+        'TblusersTableAdapter
         '
-        Me.Total_priceTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TblitemsBindingSource, "total_price", True))
-        Me.Total_priceTextBox.Location = New System.Drawing.Point(243, 363)
-        Me.Total_priceTextBox.Name = "Total_priceTextBox"
-        Me.Total_priceTextBox.Size = New System.Drawing.Size(200, 22)
-        Me.Total_priceTextBox.TabIndex = 33
+        Me.TblusersTableAdapter.ClearBeforeFill = True
+        '
+        'TbinboundingBindingSource
+        '
+        Me.TbinboundingBindingSource.DataMember = "tbinbounding"
+        Me.TbinboundingBindingSource.DataSource = Me.TarubnewDataSet
+        '
+        'TbinboundingTableAdapter
+        '
+        Me.TbinboundingTableAdapter.ClearBeforeFill = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(569, 313)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(76, 48)
+        Me.Button1.TabIndex = 23
+        Me.Button1.Text = "Refresh"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(573, 509)
-        Me.Controls.Add(IdLabel)
-        Me.Controls.Add(Me.IdTextBox)
-        Me.Controls.Add(ItemnameLabel)
-        Me.Controls.Add(Me.ItemnameTextBox)
-        Me.Controls.Add(CategoryLabel)
-        Me.Controls.Add(Me.CategoryTextBox)
-        Me.Controls.Add(Serial_noLabel)
-        Me.Controls.Add(Me.Serial_noTextBox)
-        Me.Controls.Add(QtyLabel)
-        Me.Controls.Add(Me.QtyTextBox)
-        Me.Controls.Add(Stock_inLabel)
-        Me.Controls.Add(Me.Stock_inDateTimePicker)
-        Me.Controls.Add(Stock_outLabel)
-        Me.Controls.Add(Me.Stock_outDateTimePicker)
-        Me.Controls.Add(Item_descriptionLabel)
-        Me.Controls.Add(Me.Item_descriptionTextBox)
-        Me.Controls.Add(PriceLabel)
-        Me.Controls.Add(Me.PriceTextBox)
-        Me.Controls.Add(Total_priceLabel)
-        Me.Controls.Add(Me.Total_priceTextBox)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Button2)
+        Me.ClientSize = New System.Drawing.Size(1192, 553)
         Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Tblstocks1DataGridView)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Label3)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form3"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form3"
-        CType(Me.TblitemsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TarubnewDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TblstocksBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Tblstocks1BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Tblstocks1DataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TblcustomersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TblusersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbinboundingBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents TarubnewDataSet As WindowsApplication1.tarubnewDataSet
+    Friend WithEvents TblstocksBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents TblstocksTableAdapter As WindowsApplication1.tarubnewDataSetTableAdapters.tblstocksTableAdapter
+    Friend WithEvents TableAdapterManager As WindowsApplication1.tarubnewDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Database1DataSet As WindowsApplication1.Database1DataSet
-    Friend WithEvents TblitemsBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents TblitemsTableAdapter As WindowsApplication1.Database1DataSetTableAdapters.tblitemsTableAdapter
-    Friend WithEvents TableAdapterManager As WindowsApplication1.Database1DataSetTableAdapters.TableAdapterManager
-    Friend WithEvents IdTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents ItemnameTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents CategoryTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents Serial_noTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents QtyTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents Stock_inDateTimePicker As System.Windows.Forms.DateTimePicker
-    Friend WithEvents Stock_outDateTimePicker As System.Windows.Forms.DateTimePicker
-    Friend WithEvents Item_descriptionTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents PriceTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents Total_priceTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Tblstocks1BindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents Tblstocks1TableAdapter As WindowsApplication1.tarubnewDataSetTableAdapters.tblstocks1TableAdapter
+    Friend WithEvents Tblstocks1DataGridView As System.Windows.Forms.DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents TblcustomersBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents TblcustomersTableAdapter As WindowsApplication1.tarubnewDataSetTableAdapters.tblcustomersTableAdapter
+    Friend WithEvents TblusersBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents TblusersTableAdapter As WindowsApplication1.tarubnewDataSetTableAdapters.tblusersTableAdapter
+    Friend WithEvents TbinboundingBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents TbinboundingTableAdapter As WindowsApplication1.tarubnewDataSetTableAdapters.tbinboundingTableAdapter
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

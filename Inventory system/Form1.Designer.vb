@@ -30,16 +30,16 @@ Partial Class Form1
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Database1DataSet = New WindowsApplication1.Database1DataSet()
-        Me.TblusersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TblusersTableAdapter = New WindowsApplication1.Database1DataSetTableAdapters.tblusersTableAdapter()
-        Me.TableAdapterManager = New WindowsApplication1.Database1DataSetTableAdapters.TableAdapterManager()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TblusersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TarubnewDataSet = New WindowsApplication1.tarubnewDataSet()
+        Me.TblusersTableAdapter = New WindowsApplication1.tarubnewDataSetTableAdapters.tblusersTableAdapter()
+        Me.TableAdapterManager = New WindowsApplication1.tarubnewDataSetTableAdapters.TableAdapterManager()
         UsernameLabel = New System.Windows.Forms.Label()
         PasswordLabel = New System.Windows.Forms.Label()
-        CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TblusersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TarubnewDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'UsernameLabel
@@ -102,31 +102,10 @@ Partial Class Form1
         '
         Me.Button3.Location = New System.Drawing.Point(542, 12)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.Size = New System.Drawing.Size(75, 65)
         Me.Button3.TabIndex = 14
         Me.Button3.Text = "Button3"
         Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Database1DataSet
-        '
-        Me.Database1DataSet.DataSetName = "Database1DataSet"
-        Me.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'TblusersBindingSource
-        '
-        Me.TblusersBindingSource.DataMember = "tblusers"
-        Me.TblusersBindingSource.DataSource = Me.Database1DataSet
-        '
-        'TblusersTableAdapter
-        '
-        Me.TblusersTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.tblitemsTableAdapter = Nothing
-        Me.TableAdapterManager.tblusersTableAdapter = Me.TblusersTableAdapter
-        Me.TableAdapterManager.UpdateOrder = WindowsApplication1.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
         'TextBox1
         '
@@ -142,11 +121,35 @@ Partial Class Form1
         Me.TextBox2.Size = New System.Drawing.Size(249, 22)
         Me.TextBox2.TabIndex = 17
         '
+        'TblusersBindingSource
+        '
+        Me.TblusersBindingSource.DataMember = "tblusers"
+        Me.TblusersBindingSource.DataSource = Me.TarubnewDataSet
+        '
+        'TarubnewDataSet
+        '
+        Me.TarubnewDataSet.DataSetName = "tarubnewDataSet"
+        Me.TarubnewDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'TblusersTableAdapter
+        '
+        Me.TblusersTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.tbinboundingTableAdapter = Nothing
+        Me.TableAdapterManager.tblcustomersTableAdapter = Nothing
+        Me.TableAdapterManager.tbloutboundingTableAdapter = Nothing
+        Me.TableAdapterManager.tblstocksTableAdapter = Nothing
+        Me.TableAdapterManager.tblusersTableAdapter = Me.TblusersTableAdapter
+        Me.TableAdapterManager.UpdateOrder = WindowsApplication1.tarubnewDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(629, 470)
+        Me.ClientSize = New System.Drawing.Size(637, 417)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(PasswordLabel)
@@ -159,8 +162,8 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
-        CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TblusersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TarubnewDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -170,11 +173,12 @@ Partial Class Form1
     Friend WithEvents LinkLabel1 As System.Windows.Forms.LinkLabel
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Database1DataSet As WindowsApplication1.Database1DataSet
-    Friend WithEvents TblusersBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents TblusersTableAdapter As WindowsApplication1.Database1DataSetTableAdapters.tblusersTableAdapter
-    Friend WithEvents TableAdapterManager As WindowsApplication1.Database1DataSetTableAdapters.TableAdapterManager
+
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents TarubnewDataSet As WindowsApplication1.tarubnewDataSet
+    Friend WithEvents TblusersBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents TblusersTableAdapter As WindowsApplication1.tarubnewDataSetTableAdapters.tblusersTableAdapter
+    Friend WithEvents TableAdapterManager As WindowsApplication1.tarubnewDataSetTableAdapters.TableAdapterManager
 
 End Class
