@@ -26,11 +26,19 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:WindowsApplication1.tarubnewDataSet.DataTable1DataTable">
+</member><member name="T:WindowsApplication1.tarubnewDataSet.tbladptmainDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
 </member><member name="T:WindowsApplication1.tarubnewDataSet.tblstocks1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WindowsApplication1.tarubnewDataSet.tbladptoutprintDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WindowsApplication1.tarubnewDataSet.tbladptinprintDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -54,11 +62,19 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:WindowsApplication1.tarubnewDataSet.DataTable1Row">
+</member><member name="T:WindowsApplication1.tarubnewDataSet.tbladptmainRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
 </member><member name="T:WindowsApplication1.tarubnewDataSet.tblstocks1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WindowsApplication1.tarubnewDataSet.tbladptoutprintRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WindowsApplication1.tarubnewDataSet.tbladptinprintRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
@@ -82,11 +98,19 @@ Row event argument class
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:WindowsApplication1.tarubnewDataSet.DataTable1RowChangeEvent">
+</member><member name="T:WindowsApplication1.tarubnewDataSet.tbladptmainRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
 </member><member name="T:WindowsApplication1.tarubnewDataSet.tblstocks1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WindowsApplication1.tarubnewDataSet.tbladptoutprintRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WindowsApplication1.tarubnewDataSet.tbladptinprintRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -114,11 +138,19 @@ Represents the connection and commands used to retrieve and save data.
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
-</member><member name="T:WindowsApplication1.tarubnewDataSetTableAdapters.DataTable1TableAdapter">
+</member><member name="T:WindowsApplication1.tarubnewDataSetTableAdapters.tbladptmainTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member><member name="T:WindowsApplication1.tarubnewDataSetTableAdapters.tblstocks1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WindowsApplication1.tarubnewDataSetTableAdapters.tbladptoutprintTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:WindowsApplication1.tarubnewDataSetTableAdapters.tbladptinprintTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

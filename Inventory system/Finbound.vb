@@ -1,6 +1,9 @@
 ﻿Public Class Finbound
 
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'TarubnewDataSet.tbladptinprint' table. You can move, or remove it, as needed.
+        Me.TbladptinprintTableAdapter.Fillbyprint2(Me.TarubnewDataSet.tbladptinprint)
+        'TODO: This line of code loads data into the 'TarubnewDataSet.tbladptoutprint' table. You can move, or remove it, as needed.
         'TODO: This line of code loads data into the 'TarubnewDataSet.tbinbounding' table. You can move, or remove it, as needed.
         Me.TbinboundingTableAdapter.Fill(Me.TarubnewDataSet.tbinbounding)
 
@@ -37,5 +40,11 @@
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
         Form2.Show()
         Me.Close()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        print3.Show()
+        Me.TbladptinprintTableAdapter.Fillbyprint2(Me.TarubnewDataSet.tbladptinprint)
+        print3.ReportViewer1.RefreshReport()
     End Sub
 End Class

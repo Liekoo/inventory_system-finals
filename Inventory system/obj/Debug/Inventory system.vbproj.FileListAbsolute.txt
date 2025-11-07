@@ -17,4 +17,9 @@ C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory s
 C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\obj\Debug\WindowsApplication1.Fpstocks1.resources
 C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\obj\Debug\WindowsApplication1.Foutbound.resources
 C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\obj\Debug\WindowsApplication1.Form3.resources
+C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\obj\Debug\RdlCompile.cache
+C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\obj\Debug\RdlCompile.compiled
+C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\obj\Debug\WindowsApplication1.print1.resources
+C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\obj\Debug\WindowsApplication1.print2.resources
 C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\obj\Debug\Inventory system.vbprojResolveAssemblyReference.cache
+C:\Users\lyco\Documents\Visual Studio 2012\Projects\Inventory system\Inventory system\obj\Debug\WindowsApplication1.print3.resources

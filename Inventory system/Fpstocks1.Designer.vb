@@ -55,6 +55,7 @@ Partial Class Fpstocks1
         Me.TableAdapterManager = New WindowsApplication1.tarubnewDataSetTableAdapters.TableAdapterManager()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button4 = New System.Windows.Forms.Button()
         IDLabel = New System.Windows.Forms.Label()
         ProductcodeLabel = New System.Windows.Forms.Label()
         ProductnameLabel = New System.Windows.Forms.Label()
@@ -185,7 +186,7 @@ Partial Class Fpstocks1
         Me.TblstocksDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.TblstocksDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11})
         Me.TblstocksDataGridView.DataSource = Me.TblstocksBindingSource
-        Me.TblstocksDataGridView.Location = New System.Drawing.Point(674, 178)
+        Me.TblstocksDataGridView.Location = New System.Drawing.Point(674, 137)
         Me.TblstocksDataGridView.Name = "TblstocksDataGridView"
         Me.TblstocksDataGridView.RowTemplate.Height = 24
         Me.TblstocksDataGridView.Size = New System.Drawing.Size(460, 220)
@@ -261,7 +262,7 @@ Partial Class Fpstocks1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(670, 119)
+        Me.Label1.Location = New System.Drawing.Point(670, 78)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(67, 20)
         Me.Label1.TabIndex = 38
@@ -270,7 +271,7 @@ Partial Class Fpstocks1
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(674, 142)
+        Me.TextBox1.Location = New System.Drawing.Point(674, 101)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(318, 27)
         Me.TextBox1.TabIndex = 37
@@ -285,6 +286,7 @@ Partial Class Fpstocks1
         Me.TableAdapterManager.tbinboundingTableAdapter = Nothing
         Me.TableAdapterManager.tblcustomersTableAdapter = Nothing
         Me.TableAdapterManager.tbloutboundingTableAdapter = Nothing
+        Me.TableAdapterManager.tblstocks1TableAdapter = Nothing
         Me.TableAdapterManager.tblstocksTableAdapter = Me.TblstocksTableAdapter
         Me.TableAdapterManager.tblusersTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = WindowsApplication1.tarubnewDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
@@ -310,11 +312,21 @@ Partial Class Fpstocks1
         Me.Label2.TabIndex = 50
         Me.Label2.Text = "<"
         '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(479, 346)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(142, 52)
+        Me.Button4.TabIndex = 51
+        Me.Button4.Text = "Print"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
         'Fpstocks1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1146, 410)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label1)
@@ -372,4 +384,5 @@ Partial Class Fpstocks1
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Button4 As System.Windows.Forms.Button
 End Class

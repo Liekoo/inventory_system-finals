@@ -73,4 +73,10 @@ Public Class Fpstocks1
         Form2.Show()
         Me.Close()
     End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        print2.Show()
+        Me.TblstocksTableAdapter.Fill(Me.TarubnewDataSet.tblstocks)
+        print2.ReportViewer1.RefreshReport()
+    End Sub
 End Class

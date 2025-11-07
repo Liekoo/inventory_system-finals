@@ -23,10 +23,6 @@ Partial Class Form3
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.TarubnewDataSet = New WindowsApplication1.tarubnewDataSet()
-        Me.TblstocksBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TblstocksTableAdapter = New WindowsApplication1.tarubnewDataSetTableAdapters.tblstocksTableAdapter()
-        Me.TableAdapterManager = New WindowsApplication1.tarubnewDataSetTableAdapters.TableAdapterManager()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -36,52 +32,43 @@ Partial Class Form3
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Tblstocks1BindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Tblstocks1TableAdapter = New WindowsApplication1.tarubnewDataSetTableAdapters.tblstocks1TableAdapter()
         Me.Tblstocks1DataGridView = New System.Windows.Forms.DataGridView()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Tblstocks1BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TarubnewDataSet = New WindowsApplication1.tarubnewDataSet()
+        Me.TblstocksBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TblstocksTableAdapter = New WindowsApplication1.tarubnewDataSetTableAdapters.tblstocksTableAdapter()
+        Me.TableAdapterManager = New WindowsApplication1.tarubnewDataSetTableAdapters.TableAdapterManager()
+        Me.Tblstocks1TableAdapter = New WindowsApplication1.tarubnewDataSetTableAdapters.tblstocks1TableAdapter()
         Me.TblcustomersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TblcustomersTableAdapter = New WindowsApplication1.tarubnewDataSetTableAdapters.tblcustomersTableAdapter()
         Me.TblusersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TblusersTableAdapter = New WindowsApplication1.tarubnewDataSetTableAdapters.tblusersTableAdapter()
         Me.TbinboundingBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TbinboundingTableAdapter = New WindowsApplication1.tarubnewDataSetTableAdapters.tbinboundingTableAdapter()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.TbladptmainBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TbladptmainTableAdapter = New WindowsApplication1.tarubnewDataSetTableAdapters.tbladptmainTableAdapter()
+        Me.TbladptmainDataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        CType(Me.Tblstocks1DataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Tblstocks1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TarubnewDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TblstocksBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Tblstocks1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Tblstocks1DataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TblcustomersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TblusersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TbinboundingBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbladptmainBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbladptmainDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'TarubnewDataSet
-        '
-        Me.TarubnewDataSet.DataSetName = "tarubnewDataSet"
-        Me.TarubnewDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'TblstocksBindingSource
-        '
-        Me.TblstocksBindingSource.DataMember = "tblstocks"
-        Me.TblstocksBindingSource.DataSource = Me.TarubnewDataSet
-        '
-        'TblstocksTableAdapter
-        '
-        Me.TblstocksTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.tbinboundingTableAdapter = Nothing
-        Me.TableAdapterManager.tblcustomersTableAdapter = Nothing
-        Me.TableAdapterManager.tbloutboundingTableAdapter = Nothing
-        Me.TableAdapterManager.tblstocks1TableAdapter = Nothing
-        Me.TableAdapterManager.tblstocksTableAdapter = Me.TblstocksTableAdapter
-        Me.TableAdapterManager.tblusersTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = WindowsApplication1.tarubnewDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
         'Label3
         '
@@ -178,15 +165,6 @@ Partial Class Form3
         Me.Label9.Text = "0"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Tblstocks1BindingSource
-        '
-        Me.Tblstocks1BindingSource.DataMember = "tblstocks1"
-        Me.Tblstocks1BindingSource.DataSource = Me.TarubnewDataSet
-        '
-        'Tblstocks1TableAdapter
-        '
-        Me.Tblstocks1TableAdapter.ClearBeforeFill = True
-        '
         'Tblstocks1DataGridView
         '
         Me.Tblstocks1DataGridView.AutoGenerateColumns = False
@@ -198,6 +176,15 @@ Partial Class Form3
         Me.Tblstocks1DataGridView.RowTemplate.Height = 24
         Me.Tblstocks1DataGridView.Size = New System.Drawing.Size(544, 220)
         Me.Tblstocks1DataGridView.TabIndex = 22
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(569, 313)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(76, 48)
+        Me.Button1.TabIndex = 23
+        Me.Button1.Text = "Refresh"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'DataGridViewTextBoxColumn2
         '
@@ -216,6 +203,40 @@ Partial Class Form3
         Me.DataGridViewTextBoxColumn4.DataPropertyName = "stocks"
         Me.DataGridViewTextBoxColumn4.HeaderText = "stocks"
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'Tblstocks1BindingSource
+        '
+        Me.Tblstocks1BindingSource.DataMember = "tblstocks1"
+        Me.Tblstocks1BindingSource.DataSource = Me.TarubnewDataSet
+        '
+        'TarubnewDataSet
+        '
+        Me.TarubnewDataSet.DataSetName = "tarubnewDataSet"
+        Me.TarubnewDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'TblstocksBindingSource
+        '
+        Me.TblstocksBindingSource.DataMember = "tblstocks"
+        Me.TblstocksBindingSource.DataSource = Me.TarubnewDataSet
+        '
+        'TblstocksTableAdapter
+        '
+        Me.TblstocksTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.tbinboundingTableAdapter = Nothing
+        Me.TableAdapterManager.tblcustomersTableAdapter = Nothing
+        Me.TableAdapterManager.tbloutboundingTableAdapter = Nothing
+        Me.TableAdapterManager.tblstocks1TableAdapter = Nothing
+        Me.TableAdapterManager.tblstocksTableAdapter = Me.TblstocksTableAdapter
+        Me.TableAdapterManager.tblusersTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = WindowsApplication1.tarubnewDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
+        'Tblstocks1TableAdapter
+        '
+        Me.Tblstocks1TableAdapter.ClearBeforeFill = True
         '
         'TblcustomersBindingSource
         '
@@ -244,20 +265,77 @@ Partial Class Form3
         '
         Me.TbinboundingTableAdapter.ClearBeforeFill = True
         '
-        'Button1
+        'TbladptmainBindingSource
         '
-        Me.Button1.Location = New System.Drawing.Point(569, 313)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(76, 48)
-        Me.Button1.TabIndex = 23
-        Me.Button1.Text = "Refresh"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.TbladptmainBindingSource.DataMember = "tbladptmain"
+        Me.TbladptmainBindingSource.DataSource = Me.TarubnewDataSet
+        '
+        'TbladptmainTableAdapter
+        '
+        Me.TbladptmainTableAdapter.ClearBeforeFill = True
+        '
+        'TbladptmainDataGridView
+        '
+        Me.TbladptmainDataGridView.AutoGenerateColumns = False
+        Me.TbladptmainDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.TbladptmainDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10})
+        Me.TbladptmainDataGridView.DataSource = Me.TbladptmainBindingSource
+        Me.TbladptmainDataGridView.Location = New System.Drawing.Point(667, 313)
+        Me.TbladptmainDataGridView.Name = "TbladptmainDataGridView"
+        Me.TbladptmainDataGridView.RowTemplate.Height = 24
+        Me.TbladptmainDataGridView.Size = New System.Drawing.Size(471, 220)
+        Me.TbladptmainDataGridView.TabIndex = 23
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "ID"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "productcode"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "productcode"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "productname"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "productname"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "qty_in"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "qty_in"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.DataPropertyName = "qty_out"
+        Me.DataGridViewTextBoxColumn8.HeaderText = "qty_out"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        '
+        'DataGridViewTextBoxColumn9
+        '
+        Me.DataGridViewTextBoxColumn9.DataPropertyName = "stocks"
+        Me.DataGridViewTextBoxColumn9.HeaderText = "stocks"
+        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
+        Me.DataGridViewTextBoxColumn9.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn10
+        '
+        Me.DataGridViewTextBoxColumn10.DataPropertyName = "totalstocks"
+        Me.DataGridViewTextBoxColumn10.HeaderText = "totalstocks"
+        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
+        Me.DataGridViewTextBoxColumn10.ReadOnly = True
         '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1192, 553)
+        Me.ClientSize = New System.Drawing.Size(1200, 553)
+        Me.Controls.Add(Me.TbladptmainDataGridView)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Tblstocks1DataGridView)
         Me.Controls.Add(Me.Label9)
@@ -272,13 +350,15 @@ Partial Class Form3
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form3"
         Me.Text = "Form3"
+        CType(Me.Tblstocks1DataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Tblstocks1BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TarubnewDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TblstocksBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Tblstocks1BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Tblstocks1DataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TblcustomersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TblusersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TbinboundingBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbladptmainBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbladptmainDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -309,4 +389,14 @@ Partial Class Form3
     Friend WithEvents TbinboundingBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents TbinboundingTableAdapter As WindowsApplication1.tarubnewDataSetTableAdapters.tbinboundingTableAdapter
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents TbladptmainBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents TbladptmainTableAdapter As WindowsApplication1.tarubnewDataSetTableAdapters.tbladptmainTableAdapter
+    Friend WithEvents TbladptmainDataGridView As System.Windows.Forms.DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn10 As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

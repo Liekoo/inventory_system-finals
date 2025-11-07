@@ -8,6 +8,8 @@
     End Sub
 
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'TarubnewDataSet.tbladptmain' table. You can move, or remove it, as needed.
+        Me.TbladptmainTableAdapter.Fillbythree(Me.TarubnewDataSet.tbladptmain)
         'TODO: This line of code loads data into the 'TarubnewDataSet.tbinbounding' table. You can move, or remove it, as needed.
         Me.TbinboundingTableAdapter.Fill(Me.TarubnewDataSet.tbinbounding)
         'TODO: This line of code loads data into the 'TarubnewDataSet.tblusers' table. You can move, or remove it, as needed.

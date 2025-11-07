@@ -320,7 +320,7 @@ WHERE  (username = ?) AND (passwords = ?)</CommandText>
               </DbSource>
             </Sources>
           </TableAdapter>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbladptmainTableAdapter" GeneratorDataComponentClassName="tbladptmainTableAdapter" Name="tbladptmain" UserDataComponentName="tbladptmainTableAdapter">
             <MainSource>
               <DbSource ConnectionRef="tarubnewConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fillbythree" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fillbythree" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fillbythree">
                 <SelectCommand>
@@ -405,6 +405,53 @@ WHERE  (stocks &lt;= 0)</CommandText>
               <Mapping SourceColumn="productcode" DataSetColumn="productcode" />
               <Mapping SourceColumn="productname" DataSetColumn="productname" />
               <Mapping SourceColumn="stocks" DataSetColumn="stocks" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbladptoutprintTableAdapter" GeneratorDataComponentClassName="tbladptoutprintTableAdapter" Name="tbladptoutprint" UserDataComponentName="tbladptoutprintTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="tarubnewConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fillbyprint" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fillbyprint" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fillbyprint">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT tblstocks.ID, tblstocks.productcode, tblstocks.productname, tblstocks.stocks, tbloutbounding.qty_out, tblstocks.stocks - tbloutbounding.qty_out AS totalstocks
+FROM     (tblstocks INNER JOIN
+                  tbloutbounding ON tblstocks.ID = tbloutbounding.ID)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="productcode" DataSetColumn="productcode" />
+              <Mapping SourceColumn="productname" DataSetColumn="productname" />
+              <Mapping SourceColumn="stocks" DataSetColumn="stocks" />
+              <Mapping SourceColumn="qty_out" DataSetColumn="qty_out" />
+              <Mapping SourceColumn="totalstocks" DataSetColumn="totalstocks" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbladptinprintTableAdapter" GeneratorDataComponentClassName="tbladptinprintTableAdapter" Name="tbladptinprint" UserDataComponentName="tbladptinprintTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="tarubnewConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fillbyprint2" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fillbyprint2" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fillbyprint2">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT tblstocks.ID, tblstocks.productcode, tblstocks.productname, tblstocks.stocks, tbinbounding.price, tbinbounding.qty_in, tblstocks.stocks + tbinbounding.qty_in AS totalstocks
+FROM     (tblstocks INNER JOIN
+                  tbinbounding ON tblstocks.ID = tbinbounding.ID)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="productcode" DataSetColumn="productcode" />
+              <Mapping SourceColumn="productname" DataSetColumn="productname" />
+              <Mapping SourceColumn="stocks" DataSetColumn="stocks" />
+              <Mapping SourceColumn="price" DataSetColumn="price" />
+              <Mapping SourceColumn="qty_in" DataSetColumn="qty_in" />
+              <Mapping SourceColumn="totalstocks" DataSetColumn="totalstocks" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -512,7 +559,7 @@ WHERE  (stocks &lt;= 0)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+        <xs:element name="tbladptmain" msprop:Generator_TableClassName="tbladptmainDataTable" msprop:Generator_TableVarName="tabletbladptmain" msprop:Generator_TablePropName="tbladptmain" msprop:Generator_RowDeletingName="tbladptmainRowDeleting" msprop:Generator_RowChangingName="tbladptmainRowChanging" msprop:Generator_RowEvHandlerName="tbladptmainRowChangeEventHandler" msprop:Generator_RowDeletedName="tbladptmainRowDeleted" msprop:Generator_UserTableName="tbladptmain" msprop:Generator_RowChangedName="tbladptmainRowChanged" msprop:Generator_RowEvArgName="tbladptmainRowChangeEvent" msprop:Generator_RowClassName="tbladptmainRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" minOccurs="0" />
@@ -559,6 +606,55 @@ WHERE  (stocks &lt;= 0)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="tbladptoutprint" msprop:Generator_TableClassName="tbladptoutprintDataTable" msprop:Generator_TableVarName="tabletbladptoutprint" msprop:Generator_RowChangedName="tbladptoutprintRowChanged" msprop:Generator_TablePropName="tbladptoutprint" msprop:Generator_RowDeletingName="tbladptoutprintRowDeleting" msprop:Generator_RowChangingName="tbladptoutprintRowChanging" msprop:Generator_RowEvHandlerName="tbladptoutprintRowChangeEventHandler" msprop:Generator_RowDeletedName="tbladptoutprintRowDeleted" msprop:Generator_RowClassName="tbladptoutprintRow" msprop:Generator_UserTableName="tbladptoutprint" msprop:Generator_RowEvArgName="tbladptoutprintRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" minOccurs="0" />
+              <xs:element name="productcode" msprop:Generator_ColumnVarNameInTable="columnproductcode" msprop:Generator_ColumnPropNameInRow="productcode" msprop:Generator_ColumnPropNameInTable="productcodeColumn" msprop:Generator_UserColumnName="productcode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="productname" msprop:Generator_ColumnVarNameInTable="columnproductname" msprop:Generator_ColumnPropNameInRow="productname" msprop:Generator_ColumnPropNameInTable="productnameColumn" msprop:Generator_UserColumnName="productname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stocks" msprop:Generator_ColumnVarNameInTable="columnstocks" msprop:Generator_ColumnPropNameInRow="stocks" msprop:Generator_ColumnPropNameInTable="stocksColumn" msprop:Generator_UserColumnName="stocks" type="xs:int" minOccurs="0" />
+              <xs:element name="qty_out" msprop:Generator_ColumnVarNameInTable="columnqty_out" msprop:Generator_ColumnPropNameInRow="qty_out" msprop:Generator_ColumnPropNameInTable="qty_outColumn" msprop:Generator_UserColumnName="qty_out" type="xs:int" minOccurs="0" />
+              <xs:element name="totalstocks" msprop:Generator_ColumnVarNameInTable="columntotalstocks" msprop:Generator_ColumnPropNameInRow="totalstocks" msprop:Generator_ColumnPropNameInTable="totalstocksColumn" msprop:Generator_UserColumnName="totalstocks" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbladptinprint" msprop:Generator_TableClassName="tbladptinprintDataTable" msprop:Generator_TableVarName="tabletbladptinprint" msprop:Generator_TablePropName="tbladptinprint" msprop:Generator_RowDeletingName="tbladptinprintRowDeleting" msprop:Generator_RowChangingName="tbladptinprintRowChanging" msprop:Generator_RowEvHandlerName="tbladptinprintRowChangeEventHandler" msprop:Generator_RowDeletedName="tbladptinprintRowDeleted" msprop:Generator_UserTableName="tbladptinprint" msprop:Generator_RowChangedName="tbladptinprintRowChanged" msprop:Generator_RowEvArgName="tbladptinprintRowChangeEvent" msprop:Generator_RowClassName="tbladptinprintRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" minOccurs="0" />
+              <xs:element name="productcode" msprop:Generator_ColumnVarNameInTable="columnproductcode" msprop:Generator_ColumnPropNameInRow="productcode" msprop:Generator_ColumnPropNameInTable="productcodeColumn" msprop:Generator_UserColumnName="productcode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="productname" msprop:Generator_ColumnVarNameInTable="columnproductname" msprop:Generator_ColumnPropNameInRow="productname" msprop:Generator_ColumnPropNameInTable="productnameColumn" msprop:Generator_UserColumnName="productname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="stocks" msprop:Generator_ColumnVarNameInTable="columnstocks" msprop:Generator_ColumnPropNameInRow="stocks" msprop:Generator_ColumnPropNameInTable="stocksColumn" msprop:Generator_UserColumnName="stocks" type="xs:int" minOccurs="0" />
+              <xs:element name="price" msprop:Generator_ColumnVarNameInTable="columnprice" msprop:Generator_ColumnPropNameInRow="price" msprop:Generator_ColumnPropNameInTable="priceColumn" msprop:Generator_UserColumnName="price" type="xs:decimal" minOccurs="0" />
+              <xs:element name="qty_in" msprop:Generator_ColumnVarNameInTable="columnqty_in" msprop:Generator_ColumnPropNameInRow="qty_in" msprop:Generator_ColumnPropNameInTable="qty_inColumn" msprop:Generator_UserColumnName="qty_in" type="xs:int" minOccurs="0" />
+              <xs:element name="totalstocks" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columntotalstocks" msprop:Generator_ColumnPropNameInRow="totalstocks" msprop:Generator_ColumnPropNameInTable="totalstocksColumn" msprop:Generator_UserColumnName="totalstocks" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
@@ -590,9 +686,13 @@ WHERE  (stocks &lt;= 0)</CommandText>
     <xs:appinfo>
       <msdata:Relationship name="tblstockstbinbounding" msdata:parent="tblstocks" msdata:child="tbinbounding" msdata:parentkey="ID" msdata:childkey="ID" msprop:Generator_UserChildTable="tbinbounding" msprop:Generator_ChildPropName="GettbinboundingRows" msprop:Generator_UserRelationName="tblstockstbinbounding" msprop:Generator_RelationVarName="relationtblstockstbinbounding" msprop:Generator_UserParentTable="tblstocks" msprop:Generator_ParentPropName="tblstocksRow" />
       <msdata:Relationship name="tbinboundingtbloutbounding" msdata:parent="tbinbounding" msdata:child="tbloutbounding" msdata:parentkey="ID" msdata:childkey="ID" msprop:Generator_UserChildTable="tbloutbounding" msprop:Generator_ChildPropName="GettbloutboundingRows" msprop:Generator_UserRelationName="tbinboundingtbloutbounding" msprop:Generator_ParentPropName="tbinboundingRow" msprop:Generator_RelationVarName="relationtbinboundingtbloutbounding" msprop:Generator_UserParentTable="tbinbounding" />
-      <msdata:Relationship name="tblstockstbinbounding1" msdata:parent="tblstocks" msdata:child="DataTable1" msdata:parentkey="ID" msdata:childkey="ID" msprop:Generator_UserChildTable="DataTable1" msprop:Generator_ChildPropName="GetDataTable1Rows" msprop:Generator_UserRelationName="tblstockstbinbounding1" msprop:Generator_ParentPropName="tblstocksRow" msprop:Generator_RelationVarName="relationtblstockstbinbounding1" msprop:Generator_UserParentTable="tblstocks" />
+      <msdata:Relationship name="tblstockstbinbounding1" msdata:parent="tblstocks" msdata:child="tbladptmain" msdata:parentkey="ID" msdata:childkey="ID" msprop:Generator_UserChildTable="tbladptmain" msprop:Generator_ChildPropName="GettbladptmainRows" msprop:Generator_UserRelationName="tblstockstbinbounding1" msprop:Generator_ParentPropName="tblstocksRow" msprop:Generator_RelationVarName="relationtblstockstbinbounding1" msprop:Generator_UserParentTable="tblstocks" />
       <msdata:Relationship name="tblstockstbinbounding2" msdata:parent="tblstocks1" msdata:child="tbinbounding" msdata:parentkey="ID" msdata:childkey="ID" msprop:Generator_UserChildTable="tbinbounding" msprop:Generator_ChildPropName="GettbinboundingRows" msprop:Generator_UserRelationName="tblstockstbinbounding2" msprop:Generator_RelationVarName="relationtblstockstbinbounding2" msprop:Generator_UserParentTable="tblstocks1" msprop:Generator_ParentPropName="tblstocks1Row" />
       <msdata:Relationship name="tblstockstbloutbounding" msdata:parent="tblstocks1" msdata:child="tbloutbounding" msdata:parentkey="ID" msdata:childkey="ID" msprop:Generator_UserChildTable="tbloutbounding" msprop:Generator_ChildPropName="GettbloutboundingRows" msprop:Generator_UserRelationName="tblstockstbloutbounding" msprop:Generator_RelationVarName="relationtblstockstbloutbounding" msprop:Generator_UserParentTable="tblstocks1" msprop:Generator_ParentPropName="tblstocks1Row" />
+      <msdata:Relationship name="tblstockstbloutbounding1" msdata:parent="tblstocks" msdata:child="tbladptoutprint" msdata:parentkey="ID" msdata:childkey="ID" msprop:Generator_UserChildTable="tbladptoutprint" msprop:Generator_ChildPropName="GettbladptoutprintRows" msprop:Generator_UserRelationName="tblstockstbloutbounding1" msprop:Generator_RelationVarName="relationtblstockstbloutbounding1" msprop:Generator_UserParentTable="tblstocks" msprop:Generator_ParentPropName="tblstocksRow" />
+      <msdata:Relationship name="tblstockstbloutbounding2" msdata:parent="tblstocks1" msdata:child="tbladptoutprint" msdata:parentkey="ID" msdata:childkey="ID" msprop:Generator_UserChildTable="tbladptoutprint" msprop:Generator_ChildPropName="GettbladptoutprintRows" msprop:Generator_UserRelationName="tblstockstbloutbounding2" msprop:Generator_RelationVarName="relationtblstockstbloutbounding2" msprop:Generator_UserParentTable="tblstocks1" msprop:Generator_ParentPropName="tblstocks1Row" />
+      <msdata:Relationship name="tblstockstbinbounding3" msdata:parent="tblstocks" msdata:child="tbladptinprint" msdata:parentkey="ID" msdata:childkey="ID" msprop:Generator_UserChildTable="tbladptinprint" msprop:Generator_ChildPropName="GettbladptinprintRows" msprop:Generator_UserRelationName="tblstockstbinbounding3" msprop:Generator_ParentPropName="tblstocksRow" msprop:Generator_RelationVarName="relationtblstockstbinbounding3" msprop:Generator_UserParentTable="tblstocks" />
+      <msdata:Relationship name="tblstockstbinbounding4" msdata:parent="tblstocks1" msdata:child="tbladptinprint" msdata:parentkey="ID" msdata:childkey="ID" msprop:Generator_UserChildTable="tbladptinprint" msprop:Generator_ChildPropName="GettbladptinprintRows" msprop:Generator_UserRelationName="tblstockstbinbounding4" msprop:Generator_ParentPropName="tblstocks1Row" msprop:Generator_RelationVarName="relationtblstockstbinbounding4" msprop:Generator_UserParentTable="tblstocks1" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

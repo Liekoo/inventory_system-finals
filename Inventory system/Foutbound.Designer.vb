@@ -34,8 +34,6 @@ Partial Class Foutbound
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.DataTable1TableAdapter = New WindowsApplication1.tarubnewDataSetTableAdapters.DataTable1TableAdapter()
-        Me.DataTable1BindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TarubnewDataSet = New WindowsApplication1.tarubnewDataSet()
         Me.TbloutboundingBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TbloutboundingTableAdapter = New WindowsApplication1.tarubnewDataSetTableAdapters.tbloutboundingTableAdapter()
@@ -47,35 +45,34 @@ Partial Class Foutbound
         Me.IDTextBox = New System.Windows.Forms.TextBox()
         Me.Qty_outTextBox = New System.Windows.Forms.TextBox()
         Me.TotalstocksTextBox = New System.Windows.Forms.TextBox()
-        Me.DataTable1BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DataTable1DataGridView = New System.Windows.Forms.DataGridView()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.TblstocksBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TblstocksTableAdapter = New WindowsApplication1.tarubnewDataSetTableAdapters.tblstocksTableAdapter()
+        Me.TbladptoutprintBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TbladptoutprintTableAdapter = New WindowsApplication1.tarubnewDataSetTableAdapters.tbladptoutprintTableAdapter()
+        Me.TbladptoutprintDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TblstocksBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TblstocksTableAdapter = New WindowsApplication1.tarubnewDataSetTableAdapters.tblstocksTableAdapter()
         IDLabel = New System.Windows.Forms.Label()
         Qty_outLabel = New System.Windows.Forms.Label()
         TotalstocksLabel = New System.Windows.Forms.Label()
-        CType(Me.DataTable1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TarubnewDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TbloutboundingBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TbloutboundingDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataTable1BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataTable1DataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TblstocksBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbladptoutprintBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbladptoutprintDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'IDLabel
         '
         IDLabel.AutoSize = True
-        IDLabel.Location = New System.Drawing.Point(26, 214)
+        IDLabel.Location = New System.Drawing.Point(28, 162)
         IDLabel.Name = "IDLabel"
         IDLabel.Size = New System.Drawing.Size(25, 17)
         IDLabel.TabIndex = 49
@@ -84,7 +81,7 @@ Partial Class Foutbound
         'Qty_outLabel
         '
         Qty_outLabel.AutoSize = True
-        Qty_outLabel.Location = New System.Drawing.Point(26, 242)
+        Qty_outLabel.Location = New System.Drawing.Point(28, 190)
         Qty_outLabel.Name = "Qty_outLabel"
         Qty_outLabel.Size = New System.Drawing.Size(55, 17)
         Qty_outLabel.TabIndex = 51
@@ -93,7 +90,7 @@ Partial Class Foutbound
         'TotalstocksLabel
         '
         TotalstocksLabel.AutoSize = True
-        TotalstocksLabel.Location = New System.Drawing.Point(26, 270)
+        TotalstocksLabel.Location = New System.Drawing.Point(28, 218)
         TotalstocksLabel.Name = "TotalstocksLabel"
         TotalstocksLabel.Size = New System.Drawing.Size(79, 17)
         TotalstocksLabel.TabIndex = 53
@@ -103,7 +100,7 @@ Partial Class Foutbound
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(150, 91)
+        Me.Label4.Location = New System.Drawing.Point(136, 50)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(312, 38)
         Me.Label4.TabIndex = 15
@@ -112,7 +109,7 @@ Partial Class Foutbound
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(448, 449)
+        Me.Button3.Location = New System.Drawing.Point(1011, 394)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(117, 43)
         Me.Button3.TabIndex = 38
@@ -121,7 +118,7 @@ Partial Class Foutbound
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(157, 449)
+        Me.Button1.Location = New System.Drawing.Point(160, 394)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(133, 44)
         Me.Button1.TabIndex = 36
@@ -130,7 +127,7 @@ Partial Class Foutbound
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(18, 449)
+        Me.Button4.Location = New System.Drawing.Point(21, 394)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(133, 44)
         Me.Button4.TabIndex = 45
@@ -139,7 +136,7 @@ Partial Class Foutbound
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(296, 449)
+        Me.Button5.Location = New System.Drawing.Point(299, 394)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(133, 44)
         Me.Button5.TabIndex = 46
@@ -150,11 +147,11 @@ Partial Class Foutbound
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(771, 91)
+        Me.Label1.Location = New System.Drawing.Point(784, 50)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(249, 38)
+        Me.Label1.Size = New System.Drawing.Size(231, 38)
         Me.Label1.TabIndex = 47
-        Me.Label1.Text = "Updated Stocks"
+        Me.Label1.Text = "Print Overview"
         '
         'Button6
         '
@@ -176,14 +173,6 @@ Partial Class Foutbound
         Me.Label2.Size = New System.Drawing.Size(31, 32)
         Me.Label2.TabIndex = 49
         Me.Label2.Text = "<"
-        '
-        'DataTable1TableAdapter
-        '
-        Me.DataTable1TableAdapter.ClearBeforeFill = True
-        '
-        'DataTable1BindingSource
-        '
-        Me.DataTable1BindingSource.DataMember = "DataTable1"
         '
         'TarubnewDataSet
         '
@@ -216,7 +205,7 @@ Partial Class Foutbound
         Me.TbloutboundingDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.TbloutboundingDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3})
         Me.TbloutboundingDataGridView.DataSource = Me.TbloutboundingBindingSource
-        Me.TbloutboundingDataGridView.Location = New System.Drawing.Point(217, 204)
+        Me.TbloutboundingDataGridView.Location = New System.Drawing.Point(230, 156)
         Me.TbloutboundingDataGridView.Name = "TbloutboundingDataGridView"
         Me.TbloutboundingDataGridView.RowTemplate.Height = 24
         Me.TbloutboundingDataGridView.Size = New System.Drawing.Size(357, 220)
@@ -243,7 +232,7 @@ Partial Class Foutbound
         'IDTextBox
         '
         Me.IDTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TbloutboundingBindingSource, "ID", True))
-        Me.IDTextBox.Location = New System.Drawing.Point(111, 211)
+        Me.IDTextBox.Location = New System.Drawing.Point(113, 159)
         Me.IDTextBox.Name = "IDTextBox"
         Me.IDTextBox.Size = New System.Drawing.Size(100, 22)
         Me.IDTextBox.TabIndex = 50
@@ -251,7 +240,7 @@ Partial Class Foutbound
         'Qty_outTextBox
         '
         Me.Qty_outTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TbloutboundingBindingSource, "qty_out", True))
-        Me.Qty_outTextBox.Location = New System.Drawing.Point(111, 239)
+        Me.Qty_outTextBox.Location = New System.Drawing.Point(113, 187)
         Me.Qty_outTextBox.Name = "Qty_outTextBox"
         Me.Qty_outTextBox.Size = New System.Drawing.Size(100, 22)
         Me.Qty_outTextBox.TabIndex = 52
@@ -259,27 +248,61 @@ Partial Class Foutbound
         'TotalstocksTextBox
         '
         Me.TotalstocksTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TbloutboundingBindingSource, "totalstocks", True))
-        Me.TotalstocksTextBox.Location = New System.Drawing.Point(111, 267)
+        Me.TotalstocksTextBox.Location = New System.Drawing.Point(113, 215)
         Me.TotalstocksTextBox.Name = "TotalstocksTextBox"
         Me.TotalstocksTextBox.Size = New System.Drawing.Size(100, 22)
         Me.TotalstocksTextBox.TabIndex = 54
         '
-        'DataTable1BindingSource1
+        'Label7
         '
-        Me.DataTable1BindingSource1.DataMember = "DataTable1"
-        Me.DataTable1BindingSource1.DataSource = Me.TarubnewDataSet
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(349, 120)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(18, 20)
+        Me.Label7.TabIndex = 56
+        Me.Label7.Text = "0"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'DataTable1DataGridView
+        'Label3
         '
-        Me.DataTable1DataGridView.AutoGenerateColumns = False
-        Me.DataTable1DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataTable1DataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10})
-        Me.DataTable1DataGridView.DataSource = Me.DataTable1BindingSource1
-        Me.DataTable1DataGridView.Location = New System.Drawing.Point(675, 204)
-        Me.DataTable1DataGridView.Name = "DataTable1DataGridView"
-        Me.DataTable1DataGridView.RowTemplate.Height = 24
-        Me.DataTable1DataGridView.Size = New System.Drawing.Size(453, 220)
-        Me.DataTable1DataGridView.TabIndex = 54
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(236, 120)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(107, 20)
+        Me.Label3.TabIndex = 55
+        Me.Label3.Text = "Total Stocks:"
+        '
+        'TblstocksBindingSource
+        '
+        Me.TblstocksBindingSource.DataMember = "tblstocks"
+        Me.TblstocksBindingSource.DataSource = Me.TarubnewDataSet
+        '
+        'TblstocksTableAdapter
+        '
+        Me.TblstocksTableAdapter.ClearBeforeFill = True
+        '
+        'TbladptoutprintBindingSource
+        '
+        Me.TbladptoutprintBindingSource.DataMember = "tbladptoutprint"
+        Me.TbladptoutprintBindingSource.DataSource = Me.TarubnewDataSet
+        '
+        'TbladptoutprintTableAdapter
+        '
+        Me.TbladptoutprintTableAdapter.ClearBeforeFill = True
+        '
+        'TbladptoutprintDataGridView
+        '
+        Me.TbladptoutprintDataGridView.AutoGenerateColumns = False
+        Me.TbladptoutprintDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.TbladptoutprintDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9})
+        Me.TbladptoutprintDataGridView.DataSource = Me.TbladptoutprintBindingSource
+        Me.TbladptoutprintDataGridView.Location = New System.Drawing.Point(664, 159)
+        Me.TbladptoutprintDataGridView.Name = "TbladptoutprintDataGridView"
+        Me.TbladptoutprintDataGridView.RowTemplate.Height = 24
+        Me.TbladptoutprintDataGridView.Size = New System.Drawing.Size(478, 220)
+        Me.TbladptoutprintDataGridView.TabIndex = 56
         '
         'DataGridViewTextBoxColumn4
         '
@@ -301,8 +324,8 @@ Partial Class Foutbound
         '
         'DataGridViewTextBoxColumn7
         '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "qty_in"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "qty_in"
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "stocks"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "stocks"
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         '
         'DataGridViewTextBoxColumn8
@@ -313,56 +336,18 @@ Partial Class Foutbound
         '
         'DataGridViewTextBoxColumn9
         '
-        Me.DataGridViewTextBoxColumn9.DataPropertyName = "stocks"
-        Me.DataGridViewTextBoxColumn9.HeaderText = "stocks"
+        Me.DataGridViewTextBoxColumn9.DataPropertyName = "totalstocks"
+        Me.DataGridViewTextBoxColumn9.HeaderText = "totalstocks"
         Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
-        Me.DataGridViewTextBoxColumn9.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn10
-        '
-        Me.DataGridViewTextBoxColumn10.DataPropertyName = "totalstocks"
-        Me.DataGridViewTextBoxColumn10.HeaderText = "totalstocks"
-        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
-        Me.DataGridViewTextBoxColumn10.ReadOnly = True
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(784, 181)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(18, 20)
-        Me.Label7.TabIndex = 56
-        Me.Label7.Text = "0"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(671, 181)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(107, 20)
-        Me.Label3.TabIndex = 55
-        Me.Label3.Text = "Total Stocks:"
-        '
-        'TblstocksBindingSource
-        '
-        Me.TblstocksBindingSource.DataMember = "tblstocks"
-        Me.TblstocksBindingSource.DataSource = Me.TarubnewDataSet
-        '
-        'TblstocksTableAdapter
-        '
-        Me.TblstocksTableAdapter.ClearBeforeFill = True
         '
         'Foutbound
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1154, 513)
+        Me.Controls.Add(Me.TbladptoutprintDataGridView)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.DataTable1DataGridView)
         Me.Controls.Add(IDLabel)
         Me.Controls.Add(Me.IDTextBox)
         Me.Controls.Add(Qty_outLabel)
@@ -381,13 +366,12 @@ Partial Class Foutbound
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Foutbound"
         Me.Text = "Form7"
-        CType(Me.DataTable1BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TarubnewDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TbloutboundingBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TbloutboundingDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataTable1BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataTable1DataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TblstocksBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbladptoutprintBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbladptoutprintDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -400,8 +384,6 @@ Partial Class Foutbound
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents DataTable1TableAdapter As WindowsApplication1.tarubnewDataSetTableAdapters.DataTable1TableAdapter
-    Friend WithEvents DataTable1BindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents TarubnewDataSet As WindowsApplication1.tarubnewDataSet
     Friend WithEvents TbloutboundingBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents TbloutboundingTableAdapter As WindowsApplication1.tarubnewDataSetTableAdapters.tbloutboundingTableAdapter
@@ -413,17 +395,17 @@ Partial Class Foutbound
     Friend WithEvents IDTextBox As System.Windows.Forms.TextBox
     Friend WithEvents Qty_outTextBox As System.Windows.Forms.TextBox
     Friend WithEvents TotalstocksTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents DataTable1BindingSource1 As System.Windows.Forms.BindingSource
-    Friend WithEvents DataTable1DataGridView As System.Windows.Forms.DataGridView
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents TblstocksBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents TblstocksTableAdapter As WindowsApplication1.tarubnewDataSetTableAdapters.tblstocksTableAdapter
+    Friend WithEvents TbladptoutprintBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents TbladptoutprintTableAdapter As WindowsApplication1.tarubnewDataSetTableAdapters.tbladptoutprintTableAdapter
+    Friend WithEvents TbladptoutprintDataGridView As System.Windows.Forms.DataGridView
     Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn10 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents TblstocksBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents TblstocksTableAdapter As WindowsApplication1.tarubnewDataSetTableAdapters.tblstocksTableAdapter
 End Class

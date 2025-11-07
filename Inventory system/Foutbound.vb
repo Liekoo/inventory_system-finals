@@ -1,11 +1,12 @@
 ﻿Public Class Foutbound
 
     Private Sub Form7_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'TarubnewDataSet.tbladptoutprint' table. You can move, or remove it, as needed.
+        Me.TbladptoutprintTableAdapter.Fillbyprint(Me.TarubnewDataSet.tbladptoutprint)
         'TODO: This line of code loads data into the 'TarubnewDataSet.tblstocks' table. You can move, or remove it, as needed.
         Me.TblstocksTableAdapter.Fill(Me.TarubnewDataSet.tblstocks)
         'TODO: This line of code loads data into the 'TarubnewDataSet.tbloutbounding' table. You can move, or remove it, as needed.
         Me.TbloutboundingTableAdapter.Fill(Me.TarubnewDataSet.tbloutbounding)
-        Me.DataTable1TableAdapter.Fillbythree(Me.TarubnewDataSet.DataTable1)
         Label7.Text = TblstocksBindingSource.Count
     End Sub
 
@@ -25,11 +26,16 @@
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        Me.DataTable1TableAdapter.Fillbythree(Me.TarubnewDataSet.DataTable1)
     End Sub
 
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
         Form2.Show()
         Me.Close()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        print1.Show()
+        Me.TbladptoutprintTableAdapter.Fillbyprint(Me.TarubnewDataSet.tbladptoutprint)
+        print1.ReportViewer1.RefreshReport()
     End Sub
 End Class
