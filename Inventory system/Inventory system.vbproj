@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C81D931F-ED18-4032-A4F7-B41E34B28D5B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>Inventory system</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Inventory system.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Inventory system.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MessagingToolkit.Barcode">
+      <HintPath>..\..\..\..\..\Downloads\barcode and qrcode dll\MessagingToolkit.Barcode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Finbounddel.Designer.vb">
+      <DependentUpon>Finbounddel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Finbounddel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finbound.Designer.vb">
+      <DependentUpon>Finbound.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Finbound.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Foutbounddel.Designer.vb">
+      <DependentUpon>Foutbounddel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Foutbounddel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fstocks.Designer.vb">
+      <DependentUpon>Fstocks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fstocks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="print1.Designer.vb">
+      <DependentUpon>print1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="print1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fpstocks1.Designer.vb">
+      <DependentUpon>Fpstocks1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fpstocks1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fuser.Designer.vb">
+      <DependentUpon>Fuser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fuser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fcustomer.Designer.vb">
+      <DependentUpon>Fcustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fcustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Foutbound.Designer.vb">
+      <DependentUpon>Foutbound.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Foutbound.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="print2.Designer.vb">
+      <DependentUpon>print2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="print2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="print3.Designer.vb">
+      <DependentUpon>print3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="print3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tarubnewDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tarubnewDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tarubnewDataSet.vb">
+      <DependentUpon>tarubnewDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Finbounddel.resx">
+      <DependentUpon>Finbounddel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finbound.resx">
+      <DependentUpon>Finbound.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Foutbounddel.resx">
+      <DependentUpon>Foutbounddel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fstocks.resx">
+      <DependentUpon>Fstocks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print1.resx">
+      <DependentUpon>print1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fpstocks1.resx">
+      <DependentUpon>Fpstocks1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fuser.resx">
+      <DependentUpon>Fuser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fcustomer.resx">
+      <DependentUpon>Fcustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Foutbound.resx">
+      <DependentUpon>Foutbound.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print2.resx">
+      <DependentUpon>print2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print3.resx">
+      <DependentUpon>print3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="tarubnewDataSet.xsc">
+      <DependentUpon>tarubnewDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="tarubnewDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tarubnewDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tarubnewDataSet.xss">
+      <DependentUpon>tarubnewDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database1.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\reff.png" />
+    <None Include="Resources\productmaniga-removebg-preview %281%29.png" />
+    <None Include="Resources\managecustom-removebg-preview.png" />
+    <None Include="Resources\outbound-order-3.png" />
+    <None Include="Resources\edited_image_1762703067491.png" />
+    <None Include="Resources\edited_image_1762703031094.png" />
+    <None Include="Resources\edited_image_1762703001269.png" />
+    <None Include="Resources\edited_image_17627029597211.png" />
+    <None Include="Resources\edited_image_1762702959721.png" />
+    <None Include="Resources\edited_image_1762702873575.png" />
+    <None Include="Resources\inbobo.png" />
+    <None Include="Resources\managecustom-removebg-preview1.png" />
+    <None Include="Resources\manigauser1.png" />
+    <None Include="Resources\dasboerd1.png" />
+    <None Include="Resources\icons8-dashboard-50.png" />
+    <None Include="Resources\productmaniga-removebg-preview2.png" />
+    <None Include="Resources\productmaniga-removebg-preview1.png" />
+    <None Include="Resources\output-onlinetools1.png" />
+    <None Include="Resources\output-onlinetools.png" />
+    <None Include="Resources\managecustom.jpg" />
+    <None Include="Resources\productmaniga-removebg-preview.png" />
+    <None Include="Resources\productmaniga.jpg" />
+    <None Include="Resources\manigauser.png" />
+    <None Include="Resources\user-management-vector-icon.jpg" />
+    <None Include="Resources\rep rizz.png" />
+    <None Include="Resources\dasboerd.png" />
+    <None Include="Resources\outbound1.jpg" />
+    <None Include="My Project\print.jpg" />
+    <None Include="My Project\gsave-removebg-preview.png" />
+    <None Include="My Project\gsave.jpg" />
+    <None Include="Resources\ssaaavvvee.jpg" />
+    <None Include="Resources\saveiconssse.png" />
+    <None Include="Resources\save icon.png" />
+    <None Include="Resources\repres.jpg" />
+    <None Include="Resources\BBGs.jpg" />
+    <None Include="Resources\Blue BG.jpg" />
+    <None Include="Resources\print.jpg" />
+    <None Include="Resources\BG1.jpg" />
+    <None Include="Resources\outbound.jpg" />
+    <None Include="Resources\iconlogin2.png" />
+    <None Include="Resources\loginicon2.png" />
+    <None Include="Resources\loginicon1.png" />
+    <None Include="Resources\iconlogin1.png" />
+    <None Include="Resources\next.png" />
+    <None Include="Resources\passicon1.png" />
+    <None Include="My Project\passicon.png" />
+    <None Include="Resources\Iconuser1.jpg" />
+    <None Include="Resources\Customers-Modern-Icon.png" />
+    <None Include="Resources\management %281%291.png" />
+    <None Include="Resources\management %281%29.png" />
+    <None Include="Resources\BGS1.jpg" />
+    <None Include="Resources\BGS.jpg" />
+    <None Include="Resources\2454553.png" />
+    <None Include="Resources\Iconuser.jpg" />
+    <None Include="Resources\iconlogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.4.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 4.0 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
